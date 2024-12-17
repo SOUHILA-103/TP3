@@ -1,0 +1,56 @@
+exercice 01:
+#include<stdio.h>
+char mat[5][5]={
+  {'1','2','3','4','5'}
+  {'7','a','c','8','d'}
+  {'c','9','4','z','8'}
+  {'2','9','t','m','k'}
+  };
+int i,j;
+for(i=0;i<5;i++){
+  for(j=0;j<5;j++){
+    printf("%c",mat[i][j]);
+    }
+  printf("\n");
+  }
+for(i=0;i<5;i+=2){
+  for(j=0;j<5;j++){
+    printf("%c",mat[5][5]);
+    }
+  printf("\n");
+  }
+for(i=1;i<5;i++){
+  for(j=0;j<5;j+=2){
+    printf("%c",mat[5][5]);
+    }
+  printf("\n");
+  }
+for(i=0;i<5;i++){
+  for(j=0;j<5;j++){
+    if(i==j)
+      printf("%c",mat[5][5]);
+    }
+  printf("\n");}
+for(i=0;i<5;i++){
+  printf("%c",mat[i][5-1-i];
+         printf("\n");}
+         return 0;}
+exercice 02:
+         #include<stdio.h>
+         int main(){int i,j,m[5][5],z;
+                    for(i=0;i<5;i++)
+                      for(j=0;j<5;j++){
+                        printf("donner m=\n");
+                        scanf("%d",&m[i][j]);
+                    }
+         for(i=0;i<5;i++)
+           for(j=0;j<i;j++){
+             z=m[i][j];
+             m[i][j]=m[j][i];
+             m[j][i]=z;}
+           for(i=0;i<5;i++)
+             for(j=0;j<5;j++){
+               printf("%d",m[i][j]);
+               printf("\n");
+               }
+             return 0;}
